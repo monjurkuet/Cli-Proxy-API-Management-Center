@@ -510,3 +510,18 @@ export function IconSidebarSystem({ size = 20, ...props }: IconProps) {
     </svg>
   );
 }
+
+export function IconSidebarModelTesting({ size = 20, ...props }: IconProps) {
+  return (
+    <svg {...baseSvgProps} width={size} height={size} {...props}>
+      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+      <rect x="14" y="14" width="7" height="7" rx="1.5" />
+      <path d="M6.5 6.5 9.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M17.5 6.5 20.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M6.5 17.5 9.5 20.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M17.5 17.5 20.5 20.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
